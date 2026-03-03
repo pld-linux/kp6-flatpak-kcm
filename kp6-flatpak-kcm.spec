@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.6.1
+%define		kdeplasmaver	6.6.2
 %define		qtver		5.15.2
 %define		kpname		flatpak-kcm
 
 Summary:	KDE Config Module for flatpak
 Name:		kp6-%{kpname}
-Version:	6.6.1
+Version:	6.6.2
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	7336030eef5bd5e8f05190590083f78b
+# Source0-md5:	0627a41caaa7202b8e6b7adeabba69d8
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16.0
